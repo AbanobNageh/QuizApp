@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alerter_error_background_color">#f44336</color>
+    <color name="alerter_warning_background_color">#ff9800</color>
+    <color name="alerter_information_background_color">#00bcd4</color>
+
+    <color name="rounded_layout_color">#000000</color>
+    <color name="rounded_layout_border_color">#FFFFFF</color>
+</resources>

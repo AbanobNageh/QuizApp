@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="quiz_api_url" translatable="false">http://18.191.114.87:8000/</string>
+
+    <string name="player_name_hint_text">Name</string>
+    <string name="start_button_text">Start</string>
+
+    <string name="finish_button_text">Finish</string>
+    <string name="next_question_button_text">Next Question</string>
+
+    <string name="quiz_title_placeholder_text">Title</string>
+    <string name="quiz_rating_placeholder_text">Rating</string>
+    <string name="quiz_description_placeholder_text">Description</string>
+
+    <string name="player_name_empty_error">You must enter a name!</string>
+    <string name="unknown_error_text">An unknown error has occurred</string>
+    <string name="internet_disabled_error_text">Internet is disabled</string>
+
+    <string name="error_alerter_title">Error:</string>
+    <string name="warning_alerter_title">Warning:</string>
+    <string name="information_alerter_title">Information:</string>
+
+    <string name="question_progress_text">%d / %d</string>
+
+    <string name="result_text">Result</string>
+    <string name="congratulation_text">Congratulation</string>
+    <string name="score_text">Your score is %d out of %d</string>
+    <string name="rate_quiz_text">Rate this quiz</string>
+    <string name="more_quizzes_text">Try more quizzes</string>
+</resources>

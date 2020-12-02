@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz_nav_graph"
+    app:startDestination="@id/startScreenFragment">
+
+    <fragment
+        android:id="@+id/startScreenFragment"
+        android:name="com.abanobnageh.quizapp.features.quiz.presentation.screens.StartScreenFragment"
+        android:label="fragment_start_screen"
+        tools:layout="@layout/fragment_start_screen" >
+        <action
+            android:id="@+id/action_startScreenFragment_to_quizListScreenFragment"
+            app:destination="@id/quizListScreenFragment"
+            app:popUpTo="@id/startScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizListScreenFragment"
+        android:name="com.abanobnageh.quizapp.features.quiz.presentation.screens.QuizListScreenFragment"
+        android:label="QuizListScreenFragment"
+        tools:layout="@layout/fragment_quiz_list_screen">
+
+        <action
+            android:id="@+id/action_quizListScreenFragment_to_quizScreenFragment"
+            app:destination="@id/quizScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenFragment"
+        android:name="com.abanobnageh.quizapp.features.quiz.presentation.screens.QuizScreenFragment"
+        android:label="QuizScreenFragment"
+        tools:layout="@layout/fragment_quiz_screen">
+        <argument
+            android:name="quiz_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_quizScreenFragment_to_endScreenFragment"
+            app:destination="@id/endScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endScreenFragment"
+        android:name="com.abanobnageh.quizapp.features.quiz.presentation.screens.EndScreenFragment"
+        android:label="EndScreenFragment"
+        tools:layout="@layout/fragment_end_screen">
+        <argument
+            android:name="correct_answer"
+            app:argType="integer" />
+        <argument android:name="total_questions"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_endScreenFragment_to_quizListScreenFragment"
+            app:destination="@id/quizListScreenFragment"
+            app:popUpTo="@id/quizListScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
